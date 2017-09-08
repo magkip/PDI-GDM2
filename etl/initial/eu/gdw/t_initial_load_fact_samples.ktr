@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>t_initial_load_fact_samples</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#x2f;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection>GDW_CTL</connection>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+<metrics-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>METRICS_DATE</id><enabled>Y</enabled><name>METRICS_DATE</name></field><field><id>METRICS_CODE</id><enabled>Y</enabled><name>METRICS_CODE</name></field><field><id>METRICS_DESCRIPTION</id><enabled>Y</enabled><name>METRICS_DESCRIPTION</name></field><field><id>METRICS_SUBJECT</id><enabled>Y</enabled><name>METRICS_SUBJECT</name></field><field><id>METRICS_TYPE</id><enabled>Y</enabled><name>METRICS_TYPE</name></field><field><id>METRICS_VALUE</id><enabled>Y</enabled><name>METRICS_VALUE</name></field></metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2017&#x2f;08&#x2f;01 09&#x3a;12&#x3a;29.475</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2017&#x2f;08&#x2f;01 09&#x3a;12&#x3a;29.475</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA&#x3d;</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>GDW_CTL</name>
+    <server/>
+    <type>GENERIC</type>
+    <access>JNDI</access>
+    <database>&#x24;&#x7b;mxns.gdw.jndi.gdw_ctl&#x7d;</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_GENERIC.SEQUENCE_FOR_BATCH_ID</code><attribute>LOG_TRANS_SEQ</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_GENERIC.SQL&#x3a; next sequence value</code><attribute>SELECT &#x27;SEQUENCE&#x27;.nextval</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>PREFERRED_SCHEMA_NAME</code><attribute>ctl</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>Y</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>GDW_INIT</name>
+    <server/>
+    <type>POSTGRESQL</type>
+    <access>JNDI</access>
+    <database>&#x24;&#x7b;mxns.gdw.jndi.gdw_init&#x7d;</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>Y</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>sql&#x3a; insert E&#x24;_FACT_SAMPLES</from><to>sql&#x3a; merge fact_samples</to><enabled>Y</enabled> </hop>
+  <hop> <from>generate row</from><to>sql&#x3a; insert E&#x24;_FACT_SAMPLES</to><enabled>Y</enabled> </hop>
+  </order>
+  <step>
+    <name>generate row</name>
+    <type>RowGenerator</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+    </fields>
+    <limit>1</limit>
+    <never_ending>N</never_ending>
+    <interval_in_ms>5000</interval_in_ms>
+    <row_time_field>now</row_time_field>
+    <last_time_field>FiveSecondsAgo</last_time_field>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>384</xloc>
+      <yloc>48</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>sql&#x3a; insert E&#x24;_FACT_SAMPLES</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>GDW_INIT</connection>
+    <execute_each_row>N</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>Y</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>use &#x24;&#x7b;mxns.gdw.db.gdw&#x7d;.&#x24;&#x7b;mxns.gdw.schema.gdw&#x7d;&#x3b;&#xd;&#xa;&#xd;&#xa;insert into E&#x24;_FACT_SAMPLES&#xd;&#xa;&#x28;&#xd;&#xa;  error_ts&#xd;&#xa;, error_description&#xd;&#xa;, sample_id&#xd;&#xa;, source_instance&#xd;&#xa;, lims_sample_num&#xd;&#xa;, site_id  &#xd;&#xa;, hierarchy_id     &#xd;&#xa;, customer_id     &#xd;&#xa;, project_name          &#xd;&#xa;, lims_service_code     &#xd;&#xa;, lims_service_desc     &#xd;&#xa;, category_id     &#xd;&#xa;, cust_category_code    &#xd;&#xa;, sample_type_id        &#xd;&#xa;, shipvia               &#xd;&#xa;, purchase_order        &#xd;&#xa;, login_date            &#xd;&#xa;, received_date         &#xd;&#xa;, reviewed_date        &#xd;&#xa;, sampled_date       &#xd;&#xa;, started_date          &#xd;&#xa;, status_id             &#xd;&#xa;, in_alert              &#xd;&#xa;, in_spec               &#xd;&#xa;, worst_concl_level_id  &#xd;&#xa;, accredited            &#xd;&#xa;, source_visit_num      &#xd;&#xa;, lab_id                &#xd;&#xa;, mxns_entity_id        &#xd;&#xa;, product_id           &#xd;&#xa;, service_family_id     &#xd;&#xa;, template_id           &#xd;&#xa;, service_id            &#xd;&#xa;, updated_on                 &#xd;&#xa;, gdw_updated_on&#xd;&#xa;, gdw_delete_flg&#xd;&#xa;&#x29;&#xd;&#xa;with working_set as&#xd;&#xa;&#x28;&#xd;&#xa;	with source_sample as &#xd;&#xa;	&#x28;&#xd;&#xa;		select&#xd;&#xa;        fact_samples_seq.nextval as sample_id&#xd;&#xa;    ,	&#x27;EU_LW_V5&#x27; as source_instance&#xd;&#xa;    ,	s.original_sample as lims_sample_num&#xd;&#xa;    ,	ms.gdw_site_id as site_id&#xd;&#xa;    ,	mch.gdw_hierarchy_id as hierarchy_id&#xd;&#xa;    ,	mc.gdw_customer_id as customer_id&#xd;&#xa;    ,	s.project as project_name&#xd;&#xa;    ,	s.program as lims_service_code&#xd;&#xa;    ,	pg.description as lims_service_desc&#xd;&#xa;    ,	null as category_id&#xd;&#xa;    ,	mlc.lacta_category_code as cust_category_code&#xd;&#xa;    ,	null as sample_type_id&#xd;&#xa;    ,	p.shipvia as shipvia&#xd;&#xa;    ,	p.po as purchase_order&#xd;&#xa;    ,	s.login_date as login_date&#xd;&#xa;    ,	s.recd_date as received_date&#xd;&#xa;    ,	s.date_reviewed as reviewed_date&#xd;&#xa;    ,	s.sampled_date as sampled_date&#xd;&#xa;    ,	s.date_started as started_date&#xd;&#xa;    ,	mst.gdw_status_id as status_id&#xd;&#xa;    ,	case when x.name is null then &#x27;F&#x27; else &#x27;T&#x27; end as in_alert&#xd;&#xa;    , 	null as in_spec&#xd;&#xa;    , 	null as worst_concl_level_id&#xd;&#xa;    ,	t.accreditated as accredited&#xd;&#xa;    ,	o.max_visit_id as source_visit_num&#xd;&#xa;    ,	ml.gdw_lab_id as lab_id&#xd;&#xa;    ,	mme.gdw_mxns_entity_id as mxns_entity_id&#xd;&#xa;    ,	mp.gdw_product_id as product_id&#xd;&#xa;    ,	msf.gdw_service_family_id as service_family_id&#xd;&#xa;    ,	mt.gdw_template_id as template_id&#xd;&#xa;    ,	msv.gdw_service_id as service_id&#xd;&#xa;    ,	s.changed_on as updated_on&#xd;&#xa;    from dev_ods_eu.lims.samples s&#xd;&#xa;    join dev_ods_eu.lims.project p&#xd;&#xa;        on s.project &#x3d; p.name&#xd;&#xa;    join dev_ods_eu.lims.external_location el&#xd;&#xa;        on p.received_from &#x3d; el.name&#xd;&#xa;    join stage.map_sites ms&#xd;&#xa;        on el.name &#x3d; ms.source_site_code&#xd;&#xa;        and ms.source_instance &#x3d; &#x27;EU_LW_V5&#x27;&#xd;&#xa;    join stage.map_cust_hierarchies mch&#xd;&#xa;        on s.contact_role &#x3d; mch.source_hierarchy_code&#xd;&#xa;        and mch.source_instance &#x3d; &#x27;EU_LW_V5&#x27;&#xd;&#xa;        and mch.source_hierarchy_type &#x3d; &#x27;CONTACT_ROLE&#x27;&#xd;&#xa;    join stage.map_customers mc&#xd;&#xa;        on s.contact_role &#x3d; mc.source_customer_code&#xd;&#xa;        and mc.source_instance &#x3d; &#x27;EU_LW_V5&#x27;&#xd;&#xa;    join dev_ods_eu.lims.program pg&#xd;&#xa;        on s.program &#x3d; pg.name&#xd;&#xa;       and s.program_version &#x3d; pg.version&#xd;&#xa;    left join dev_ods_eu.lims.final_prod_struct fps&#xd;&#xa;        on replace&#x28;&#x28;replace&#x28;&#x28;replace&#x28;s.final_product, &#x27;03&#x3f;016&#x3f;678&#x27;,&#x27;03.016.678&#x27;&#x29;&#x29;, &#x27;50&#x3f;518&#x3f;501&#x27;, &#x27;50.518.501&#x27;&#x29;&#x29;, &#x27;70&#x3f;514&#x3f;250&#x27;,&#x27;70.514.250&#x27;&#x29; &#x3d; fps.name&#xd;&#xa;    left join stage.map_lacta_categories mlc&#xd;&#xa;        on trim&#x28;fps.parent_id&#x29;&#x3d;mlc.source_key1&#xd;&#xa;        and  mlc.source_instance &#x3d; &#x27;EU_LW_V5&#x27;&#xd;&#xa;    join stage.map_statuses mst&#xd;&#xa;        on s.status &#x3d; mst.source_status_code&#xd;&#xa;        and mst.source_instance &#x3d; &#x27;EU_LW_V5&#x27;&#xd;&#xa;    left outer join dev_ods_eu.lims.x_alert x&#xd;&#xa;        on s.sample_number &#x3d; x.sample_number&#xd;&#xa;    join &#x28;select sample_number, min&#x28;nvl&#x28;in_spec,&#x27;T&#x27;&#x29;&#x29; as in_spec, max&#x28;accreditated&#x29; as accreditated&#xd;&#xa;                from dev_ods_eu.lims.test&#xd;&#xa;                group by sample_number&#x29; t&#xd;&#xa;        on s.sample_number &#x3d; t.sample_number&#xd;&#xa;    join stage.map_labs ml&#xd;&#xa;        on s.owner_location &#x3d; ml.source_lab_code&#xd;&#xa;        and ml.source_instance &#x3d; &#x27;EU_LW_V5&#x27;&#xd;&#xa;    join  stage.map_mxns_entity mme&#xd;&#xa;        on s.owner_location &#x3d; mme.source_code&#xd;&#xa;        and mme.source_code_type &#x3d; &#x27;OWNER LOCATION&#x27;&#xd;&#xa;        and mme.source_instance &#x3d; &#x27;EU_LW_V5&#x27;&#xd;&#xa;    join stage.map_products mp&#xd;&#xa;       on s.program &#x7c;&#x7c; &#x27;&#x2f;&#x27; &#x7c;&#x7c; s.program_version &#x7c;&#x7c; &#x27;&#x2f;&#x27; &#x7c;&#x7c; s.product &#x3d; mp.product_code&#xd;&#xa;       and mp.source_instance &#x3d; &#x27;EU_LW_V5&#x27;&#xd;&#xa;    left join dev_ods_eu.lims.test_list tl&#xd;&#xa;        on s.test_list &#x3d; tl.name&#xd;&#xa;    left join dev_ods_eu.lims.program_product pp&#xd;&#xa;        on s.program &#x3d; pp.program&#xd;&#xa;        and s.product &#x3d; pp.product&#xd;&#xa;    join stage.map_services_family msf&#xd;&#xa;        on case when s.test_list is not null then tl.x_family_prod else pp.x_family_prod end &#x3d; msf.service_family_code&#xd;&#xa;        and msf.source_instance &#x3d; &#x27;EU_LW_V5&#x27;&#xd;&#xa;     --select &#x2a; from dev_ods_eu.lims&#xd;&#xa;    left join &#x28;select order_id,  max&#x28;visit_id&#x29; as max_visit_id --order_id is unique - not actually grouping&#xd;&#xa;                from dev_ods_eu.estar.orders og&#xd;&#xa;                group by order_id&#x29; o&#xd;&#xa;        on p.order_id &#x3d; o.order_id     	&#xd;&#xa;    join stage.map_templates mt&#xd;&#xa;        on s.template &#x3d; mt.template_code&#xd;&#xa;        and mt.source_instance &#x3d; &#x27;EU_LW_V5&#x27;&#xd;&#xa;        and mt.template_type &#x3d; &#x27;SAMPLE&#x27;&#xd;&#xa;    join stage.map_services msv&#xd;&#xa;        on s.program &#x3d; msv.service_code&#xd;&#xa;        and s.program_version &#x3d; msv.service_version --s.program_version is null and zeroes&#xd;&#xa;        and msv.source_instance &#x3d; &#x27;EU_LW_V5&#x27;&#xd;&#xa;	&#x29;&#xd;&#xa;	select&#xd;&#xa;		sample_id&#xd;&#xa;	,	source_instance&#xd;&#xa;	,	lims_sample_num&#xd;&#xa;	,	site_id&#xd;&#xa;	,	hierarchy_id&#xd;&#xa;	,	customer_id&#xd;&#xa;	,	project_name&#xd;&#xa;	,	lims_service_code&#xd;&#xa;	,	lims_service_desc&#xd;&#xa;	,	category_id     &#xd;&#xa;	,	cust_category_code&#xd;&#xa;	,	sample_type_id        &#xd;&#xa;	,	shipvia&#xd;&#xa;	,	purchase_order      &#xd;&#xa;	,	login_date&#xd;&#xa;	,	received_date&#xd;&#xa;	,	reviewed_date&#xd;&#xa;	,	sampled_date&#xd;&#xa;	,	started_date&#xd;&#xa;	,	status_id&#xd;&#xa;	,	in_alert&#xd;&#xa;	,	in_spec&#xd;&#xa;	,	worst_concl_level_id&#xd;&#xa;	,	accredited&#xd;&#xa;	,	source_visit_num&#xd;&#xa;	,	lab_id&#xd;&#xa;	,	mxns_entity_id&#xd;&#xa;	,	product_id&#xd;&#xa;	,	service_family_id&#xd;&#xa;	,	template_id&#xd;&#xa;	,	service_id&#xd;&#xa;	,	updated_on&#xd;&#xa;	,	current_timestamp as gdw_updated_on&#xd;&#xa;	,	&#x27;false&#x27; as gdw_delete_flg&#xd;&#xa;	from source_sample&#xd;&#xa;&#x29;&#xd;&#xa;select current_timestamp, &#x27;duplicate record&#x27;, w.sample_id, w.source_instance, w.lims_sample_num, w.site_id, w.hierarchy_id, w.customer_id, w.project_name, w.lims_service_code, w.lims_service_desc, w.category_id, w.cust_category_code, w.sample_type_id, w.shipvia, w.purchase_order, w.login_date, w.received_date, w.reviewed_date, w.sampled_date, w.started_date, w.status_id, w.in_alert, w.in_spec, w.worst_concl_level_id, w.accredited, w.source_visit_num, w.lab_id, w.mxns_entity_id, w.product_id, w.service_family_id, w.template_id, w.service_id, w.updated_on, w.gdw_updated_on, w.gdw_delete_flg&#xd;&#xa;from working_set w&#xd;&#xa;join&#xd;&#xa;&#x28;&#xd;&#xa;	select source_instance, lims_sample_num&#xd;&#xa;	from working_set&#xd;&#xa;	group by source_instance, lims_sample_num&#xd;&#xa;	having count&#x28;&#x2a;&#x29; &#x3e; 1&#xd;&#xa;&#x29; j on j.source_instance &#x3d; w.source_instance &#xd;&#xa;	and j.lims_sample_num &#x3d; w.lims_sample_num&#xd;&#xa;union&#xd;&#xa;select current_timestamp, &#x27;sample_id is null and field is mandatory&#x27;, w.sample_id, w.source_instance, w.lims_sample_num, w.site_id, w.hierarchy_id, w.customer_id, w.project_name, w.lims_service_code, w.lims_service_desc, w.category_id, w.cust_category_code, w.sample_type_id, w.shipvia, w.purchase_order, w.login_date, w.received_date, w.reviewed_date, w.sampled_date, w.started_date, w.status_id, w.in_alert, w.in_spec, w.worst_concl_level_id, w.accredited, w.source_visit_num, w.lab_id, w.mxns_entity_id, w.product_id, w.service_family_id, w.template_id, w.service_id, w.updated_on, w.gdw_updated_on, w.gdw_delete_flg&#xd;&#xa;from working_set w&#xd;&#xa;where w.sample_id is null&#xd;&#xa;union&#xd;&#xa;select current_timestamp, &#x27;source_instance is null and field is mandatory&#x27;, w.sample_id, w.source_instance, w.lims_sample_num, w.site_id, w.hierarchy_id, w.customer_id, w.project_name, w.lims_service_code, w.lims_service_desc, w.category_id, w.cust_category_code, w.sample_type_id, w.shipvia, w.purchase_order, w.login_date, w.received_date, w.reviewed_date, w.sampled_date, w.started_date, w.status_id, w.in_alert, w.in_spec, w.worst_concl_level_id, w.accredited, w.source_visit_num, w.lab_id, w.mxns_entity_id, w.product_id, w.service_family_id, w.template_id, w.service_id, w.updated_on, w.gdw_updated_on, w.gdw_delete_flg&#xd;&#xa;from working_set w&#xd;&#xa;where w.source_instance is null&#xd;&#xa;union&#xd;&#xa;select current_timestamp, &#x27;lims_sample_num is null and field is mandatory&#x27;, w.sample_id, w.source_instance, w.lims_sample_num, w.site_id, w.hierarchy_id, w.customer_id, w.project_name, w.lims_service_code, w.lims_service_desc, w.category_id, w.cust_category_code, w.sample_type_id, w.shipvia, w.purchase_order, w.login_date, w.received_date, w.reviewed_date, w.sampled_date, w.started_date, w.status_id, w.in_alert, w.in_spec, w.worst_concl_level_id, w.accredited, w.source_visit_num, w.lab_id, w.mxns_entity_id, w.product_id, w.service_family_id, w.template_id, w.service_id, w.updated_on, w.gdw_updated_on, w.gdw_delete_flg&#xd;&#xa;from working_set w&#xd;&#xa;where w.lims_sample_num is null&#xd;&#xa;union&#xd;&#xa;select current_timestamp, &#x27;site_id is null and field is mandatory&#x27;, w.sample_id, w.source_instance, w.lims_sample_num, w.site_id, w.hierarchy_id, w.customer_id, w.project_name, w.lims_service_code, w.lims_service_desc, w.category_id, w.cust_category_code, w.sample_type_id, w.shipvia, w.purchase_order, w.login_date, w.received_date, w.reviewed_date, w.sampled_date, w.started_date, w.status_id, w.in_alert, w.in_spec, w.worst_concl_level_id, w.accredited, w.source_visit_num, w.lab_id, w.mxns_entity_id, w.product_id, w.service_family_id, w.template_id, w.service_id, w.updated_on, w.gdw_updated_on, w.gdw_delete_flg&#xd;&#xa;from working_set w&#xd;&#xa;where w.site_id is null&#xd;&#xa;union&#xd;&#xa;select current_timestamp, &#x27;customer_id is null and field is mandatory&#x27;, w.sample_id, w.source_instance, w.lims_sample_num, w.site_id, w.hierarchy_id, w.customer_id, w.project_name, w.lims_service_code, w.lims_service_desc, w.category_id, w.cust_category_code, w.sample_type_id, w.shipvia, w.purchase_order, w.login_date, w.received_date, w.reviewed_date, w.sampled_date, w.started_date, w.status_id, w.in_alert, w.in_spec, w.worst_concl_level_id, w.accredited, w.source_visit_num, w.lab_id, w.mxns_entity_id, w.product_id, w.service_family_id, w.template_id, w.service_id, w.updated_on, w.gdw_updated_on, w.gdw_delete_flg&#xd;&#xa;from working_set w&#xd;&#xa;where w.customer_id is null&#xd;&#xa;union&#xd;&#xa;select current_timestamp, &#x27;updated_on is null and field is mandatory&#x27;, w.sample_id, w.source_instance, w.lims_sample_num, w.site_id, w.hierarchy_id, w.customer_id, w.project_name, w.lims_service_code, w.lims_service_desc, w.category_id, w.cust_category_code, w.sample_type_id, w.shipvia, w.purchase_order, w.login_date, w.received_date, w.reviewed_date, w.sampled_date, w.started_date, w.status_id, w.in_alert, w.in_spec, w.worst_concl_level_id, w.accredited, w.source_visit_num, w.lab_id, w.mxns_entity_id, w.product_id, w.service_family_id, w.template_id, w.service_id, w.updated_on, w.gdw_updated_on, w.gdw_delete_flg&#xd;&#xa;from working_set w&#xd;&#xa;where w.updated_on is null&#xd;&#xa;&#x3b;</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>384</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>sql&#x3a; merge fact_samples</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>GDW_INIT</connection>
+    <execute_each_row>N</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>Y</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>use &#x24;&#x7b;mxns.gdw.db.gdw&#x7d;.&#x24;&#x7b;mxns.gdw.schema.gdw&#x7d;&#x3b;&#xd;&#xa;&#xd;&#xa;merge into fact_samples d&#xd;&#xa;using&#xd;&#xa;&#x28;&#xd;&#xa;	with working_set as&#xd;&#xa;	&#x28;&#xd;&#xa;		with source_sample as &#xd;&#xa;		&#x28;&#xd;&#xa;select&#xd;&#xa;        fact_samples_seq.nextval as sample_id&#xd;&#xa;    ,	&#x27;EU_LW_V5&#x27; as source_instance&#xd;&#xa;    ,	s.original_sample as lims_sample_num&#xd;&#xa;    ,	ms.gdw_site_id as site_id&#xd;&#xa;    ,	mch.gdw_hierarchy_id as hierarchy_id&#xd;&#xa;    ,	mc.gdw_customer_id as customer_id&#xd;&#xa;    ,	s.project as project_name&#xd;&#xa;    ,	s.program as lims_service_code&#xd;&#xa;    ,	pg.description as lims_service_desc&#xd;&#xa;    ,	null as category_id&#xd;&#xa;    ,	mlc.lacta_category_code as cust_category_code&#xd;&#xa;    ,	null as sample_type_id&#xd;&#xa;    ,	p.shipvia as shipvia&#xd;&#xa;    ,	p.po as purchase_order&#xd;&#xa;    ,	s.login_date as login_date&#xd;&#xa;    ,	s.recd_date as received_date&#xd;&#xa;    ,	s.date_reviewed as reviewed_date&#xd;&#xa;    ,	s.sampled_date as sampled_date&#xd;&#xa;    ,	s.date_started as started_date&#xd;&#xa;    ,	mst.gdw_status_id as status_id&#xd;&#xa;    ,	case when x.name is null then &#x27;F&#x27; else &#x27;T&#x27; end as in_alert&#xd;&#xa;    , 	null as in_spec&#xd;&#xa;    , 	null as worst_concl_level_id&#xd;&#xa;    ,	t.accreditated as accredited&#xd;&#xa;    ,	o.max_visit_id as source_visit_num&#xd;&#xa;    ,	ml.gdw_lab_id as lab_id&#xd;&#xa;    ,	mme.gdw_mxns_entity_id as mxns_entity_id&#xd;&#xa;    ,	mp.gdw_product_id as product_id&#xd;&#xa;    ,	msf.gdw_service_family_id as service_family_id&#xd;&#xa;    ,	mt.gdw_template_id as template_id&#xd;&#xa;    ,	msv.gdw_service_id as service_id&#xd;&#xa;    ,	s.changed_on as updated_on&#xd;&#xa;    from dev_ods_eu.lims.samples s&#xd;&#xa;    join dev_ods_eu.lims.project p&#xd;&#xa;        on s.project &#x3d; p.name&#xd;&#xa;    join dev_ods_eu.lims.external_location el&#xd;&#xa;        on p.received_from &#x3d; el.name&#xd;&#xa;    join stage.map_sites ms&#xd;&#xa;        on el.name &#x3d; ms.source_site_code&#xd;&#xa;        and ms.source_instance &#x3d; &#x27;EU_LW_V5&#x27;&#xd;&#xa;    join stage.map_cust_hierarchies mch&#xd;&#xa;        on s.contact_role &#x3d; mch.source_hierarchy_code&#xd;&#xa;        and mch.source_instance &#x3d; &#x27;EU_LW_V5&#x27;&#xd;&#xa;        and mch.source_hierarchy_type &#x3d; &#x27;CONTACT_ROLE&#x27;&#xd;&#xa;    join stage.map_customers mc&#xd;&#xa;        on s.contact_role &#x3d; mc.source_customer_code&#xd;&#xa;        and mc.source_instance &#x3d; &#x27;EU_LW_V5&#x27;&#xd;&#xa;    join dev_ods_eu.lims.program pg&#xd;&#xa;        on s.program &#x3d; pg.name&#xd;&#xa;       and s.program_version &#x3d; pg.version&#xd;&#xa;    left join dev_ods_eu.lims.final_prod_struct fps&#xd;&#xa;        on replace&#x28;&#x28;replace&#x28;&#x28;replace&#x28;s.final_product, &#x27;03&#x3f;016&#x3f;678&#x27;,&#x27;03.016.678&#x27;&#x29;&#x29;, &#x27;50&#x3f;518&#x3f;501&#x27;, &#x27;50.518.501&#x27;&#x29;&#x29;, &#x27;70&#x3f;514&#x3f;250&#x27;,&#x27;70.514.250&#x27;&#x29; &#x3d; fps.name&#xd;&#xa;    left join stage.map_lacta_categories mlc&#xd;&#xa;        on trim&#x28;fps.parent_id&#x29;&#x3d;mlc.source_key1&#xd;&#xa;        and  mlc.source_instance &#x3d; &#x27;EU_LW_V5&#x27;&#xd;&#xa;    join stage.map_statuses mst&#xd;&#xa;        on s.status &#x3d; mst.source_status_code&#xd;&#xa;        and mst.source_instance &#x3d; &#x27;EU_LW_V5&#x27;&#xd;&#xa;    left outer join dev_ods_eu.lims.x_alert x&#xd;&#xa;        on s.sample_number &#x3d; x.sample_number&#xd;&#xa;    join &#x28;select sample_number, min&#x28;nvl&#x28;in_spec,&#x27;T&#x27;&#x29;&#x29; as in_spec, max&#x28;accreditated&#x29; as accreditated&#xd;&#xa;                from dev_ods_eu.lims.test&#xd;&#xa;                group by sample_number&#x29; t&#xd;&#xa;        on s.sample_number &#x3d; t.sample_number&#xd;&#xa;    join stage.map_labs ml&#xd;&#xa;        on s.owner_location &#x3d; ml.source_lab_code&#xd;&#xa;        and ml.source_instance &#x3d; &#x27;EU_LW_V5&#x27;&#xd;&#xa;    join  stage.map_mxns_entity mme&#xd;&#xa;        on s.owner_location &#x3d; mme.source_code&#xd;&#xa;        and mme.source_code_type &#x3d; &#x27;OWNER LOCATION&#x27;&#xd;&#xa;        and mme.source_instance &#x3d; &#x27;EU_LW_V5&#x27;&#xd;&#xa;    join stage.map_products mp&#xd;&#xa;       on s.program &#x7c;&#x7c; &#x27;&#x2f;&#x27; &#x7c;&#x7c; s.program_version &#x7c;&#x7c; &#x27;&#x2f;&#x27; &#x7c;&#x7c; s.product &#x3d; mp.product_code&#xd;&#xa;       and mp.source_instance &#x3d; &#x27;EU_LW_V5&#x27;&#xd;&#xa;    left join dev_ods_eu.lims.test_list tl&#xd;&#xa;        on s.test_list &#x3d; tl.name&#xd;&#xa;    left join dev_ods_eu.lims.program_product pp&#xd;&#xa;        on s.program &#x3d; pp.program&#xd;&#xa;        and s.product &#x3d; pp.product&#xd;&#xa;    join stage.map_services_family msf&#xd;&#xa;        on case when s.test_list is not null then tl.x_family_prod else pp.x_family_prod end &#x3d; msf.service_family_code&#xd;&#xa;        and msf.source_instance &#x3d; &#x27;EU_LW_V5&#x27;&#xd;&#xa;     --select &#x2a; from dev_ods_eu.lims&#xd;&#xa;    left join &#x28;select order_id,  max&#x28;visit_id&#x29; as max_visit_id --order_id is unique - not actually grouping&#xd;&#xa;                from dev_ods_eu.estar.orders og&#xd;&#xa;                group by order_id&#x29; o&#xd;&#xa;        on p.order_id &#x3d; o.order_id     	&#xd;&#xa;    join stage.map_templates mt&#xd;&#xa;        on s.template &#x3d; mt.template_code&#xd;&#xa;        and mt.source_instance &#x3d; &#x27;EU_LW_V5&#x27;&#xd;&#xa;        and mt.template_type &#x3d; &#x27;SAMPLE&#x27;&#xd;&#xa;    join stage.map_services msv&#xd;&#xa;        on s.program &#x3d; msv.service_code&#xd;&#xa;        and s.program_version &#x3d; msv.service_version --s.program_version is null and zeroes&#xd;&#xa;        and msv.source_instance &#x3d; &#x27;EU_LW_V5&#x27;&#xd;&#xa;		&#x29;&#xd;&#xa;		select&#xd;&#xa;			sample_id&#xd;&#xa;		,	source_instance&#xd;&#xa;		,	lims_sample_num&#xd;&#xa;		,	site_id&#xd;&#xa;		,	hierarchy_id&#xd;&#xa;		,	customer_id&#xd;&#xa;		,	project_name&#xd;&#xa;		,	lims_service_code&#xd;&#xa;		,	lims_service_desc&#xd;&#xa;		,	category_id     &#xd;&#xa;		,	cust_category_code&#xd;&#xa;		,	sample_type_id        &#xd;&#xa;		,	shipvia&#xd;&#xa;		,	purchase_order      &#xd;&#xa;		,	login_date&#xd;&#xa;		,	received_date&#xd;&#xa;		,	reviewed_date&#xd;&#xa;		,	sampled_date&#xd;&#xa;		,	started_date&#xd;&#xa;		,	status_id&#xd;&#xa;		,	in_alert&#xd;&#xa;		,	in_spec&#xd;&#xa;		,	worst_concl_level_id&#xd;&#xa;		,	accredited&#xd;&#xa;		,	source_visit_num&#xd;&#xa;		,	lab_id&#xd;&#xa;		,	mxns_entity_id&#xd;&#xa;		,	product_id&#xd;&#xa;		,	service_family_id&#xd;&#xa;		,	template_id&#xd;&#xa;		,	service_id&#xd;&#xa;		,	updated_on&#xd;&#xa;		,	current_timestamp as gdw_updated_on&#xd;&#xa;		,	&#x27;false&#x27; as gdw_delete_flg&#xd;&#xa;		from source_sample&#xd;&#xa;	&#x29;&#xd;&#xa;	select&#xd;&#xa;		w.sample_id&#xd;&#xa;	,	w.source_instance&#xd;&#xa;	,	w.lims_sample_num&#xd;&#xa;	,	w.site_id&#xd;&#xa;	,	w.hierarchy_id&#xd;&#xa;	,	w.customer_id&#xd;&#xa;	,	w.project_name&#xd;&#xa;	,	w.lims_service_code&#xd;&#xa;	,	w.lims_service_desc&#xd;&#xa;	,	w.category_id     &#xd;&#xa;	,	w.cust_category_code&#xd;&#xa;	,	w.sample_type_id        &#xd;&#xa;	,	w.shipvia&#xd;&#xa;	,	w.purchase_order      &#xd;&#xa;	,	w.login_date&#xd;&#xa;	,	w.received_date&#xd;&#xa;	,	w.reviewed_date&#xd;&#xa;	,	w.sampled_date&#xd;&#xa;	,	w.started_date&#xd;&#xa;	,	w.status_id&#xd;&#xa;	,	w.in_alert&#xd;&#xa;	,	w.in_spec&#xd;&#xa;	,	w.worst_concl_level_id&#xd;&#xa;	,	w.accredited&#xd;&#xa;	,	w.source_visit_num&#xd;&#xa;	,	w.lab_id&#xd;&#xa;	,	w.mxns_entity_id&#xd;&#xa;	,	w.product_id&#xd;&#xa;	,	w.service_family_id&#xd;&#xa;	,	w.template_id&#xd;&#xa;	,	w.service_id&#xd;&#xa;	,	w.updated_on&#xd;&#xa;	,	w.gdw_updated_on&#xd;&#xa;	,	w.gdw_delete_flg&#xd;&#xa;	from working_set w&#xd;&#xa;	join&#xd;&#xa;	&#x28;&#xd;&#xa;		select source_instance, lims_sample_num&#xd;&#xa;		from working_set&#xd;&#xa;		group by source_instance, lims_sample_num&#xd;&#xa;		having count&#x28;&#x2a;&#x29; &#x3d; 1&#xd;&#xa;	&#x29; j on j.source_instance &#x3d; w.source_instance &#xd;&#xa;		and j.lims_sample_num &#x3d; w.lims_sample_num&#xd;&#xa;	where w.sample_id is not null&#xd;&#xa;	and w.source_instance is not null&#xd;&#xa;	and w.lims_sample_num is not null&#xd;&#xa;	and w.site_id is not null&#xd;&#xa;	and w.customer_id is not null&#xd;&#xa;	and w.updated_on is not null&#xd;&#xa;&#x29; as s on s.source_instance &#x3d; d.source_instance and s.lims_sample_num &#x3d; d.lims_sample_num&#xd;&#xa;when matched then update set&#xd;&#xa;  d.sample_id &#x3d; s.sample_id   &#xd;&#xa;, d.site_id &#x3d; s.site_id   &#xd;&#xa;, d.hierarchy_id &#x3d; s.hierarchy_id  &#xd;&#xa;, d.customer_id &#x3d; s.customer_id    &#xd;&#xa;, d.project_name &#x3d; s.project_name&#xd;&#xa;, d.lims_service_code &#x3d; s.lims_service_code&#xd;&#xa;, d.lims_service_desc &#x3d; s.lims_service_desc&#xd;&#xa;, d.category_id &#x3d; s.category_id&#xd;&#xa;, d.cust_category_code &#x3d; s.cust_category_code&#xd;&#xa;, d.sample_type_id &#x3d; s.sample_type_id&#xd;&#xa;, d.shipvia &#x3d; s.shipvia&#xd;&#xa;, d.purchase_order &#x3d; s.purchase_order&#xd;&#xa;, d.login_date &#x3d; s.login_date&#xd;&#xa;, d.received_date &#x3d; s.received_date&#xd;&#xa;, d.reviewed_date &#x3d; s.reviewed_date&#xd;&#xa;, d.sampled_date &#x3d; s.sampled_date&#xd;&#xa;, d.started_date &#x3d; s.started_date&#xd;&#xa;, d.status_id &#x3d; s.status_id&#xd;&#xa;, d.in_alert&#x3d; s.in_alert&#xd;&#xa;, d.in_spec &#x3d; s.in_spec&#xd;&#xa;, d.worst_concl_level_id &#x3d; s.worst_concl_level_id&#xd;&#xa;, d.accredited &#x3d; s.accredited&#xd;&#xa;, d.source_visit_num &#x3d; s.source_visit_num&#xd;&#xa;, d.lab_id &#x3d; s.lab_id&#xd;&#xa;, d.mxns_entity_id&#x3d; s.mxns_entity_id&#xd;&#xa;, d.product_id &#x3d; s.product_id&#xd;&#xa;, d.service_family_id &#x3d; s.service_family_id&#xd;&#xa;, d.template_id &#x3d; s.template_id&#xd;&#xa;, d.service_id &#x3d; s.service_id&#xd;&#xa;, d.updated_on &#x3d; s.updated_on&#xd;&#xa;, d.gdw_updated_on &#x3d; s.gdw_updated_on&#xd;&#xa;, d.gdw_delete_flg &#x3d; s.gdw_delete_flg&#xd;&#xa;when not matched then insert &#x28;&#xd;&#xa;  sample_id&#xd;&#xa;, source_instance&#xd;&#xa;, lims_sample_num&#xd;&#xa;, site_id  &#xd;&#xa;, hierarchy_id     &#xd;&#xa;, customer_id     &#xd;&#xa;, project_name          &#xd;&#xa;, lims_service_code     &#xd;&#xa;, lims_service_desc     &#xd;&#xa;, category_id     &#xd;&#xa;, cust_category_code    &#xd;&#xa;, sample_type_id        &#xd;&#xa;, shipvia               &#xd;&#xa;, purchase_order        &#xd;&#xa;, login_date            &#xd;&#xa;, received_date         &#xd;&#xa;, reviewed_date        &#xd;&#xa;, sampled_date       &#xd;&#xa;, started_date          &#xd;&#xa;, status_id             &#xd;&#xa;, in_alert              &#xd;&#xa;, in_spec               &#xd;&#xa;, worst_concl_level_id  &#xd;&#xa;, accredited            &#xd;&#xa;, source_visit_num      &#xd;&#xa;, lab_id                &#xd;&#xa;, mxns_entity_id        &#xd;&#xa;, product_id           &#xd;&#xa;, service_family_id     &#xd;&#xa;, template_id           &#xd;&#xa;, service_id            &#xd;&#xa;, updated_on                 &#xd;&#xa;, gdw_updated_on&#xd;&#xa;, gdw_delete_flg&#xd;&#xa;&#x29;&#xd;&#xa;values &#x28;&#xd;&#xa;  s.sample_id&#xd;&#xa;, s.source_instance&#xd;&#xa;, s.lims_sample_num&#xd;&#xa;, s.site_id  &#xd;&#xa;, s.hierarchy_id     &#xd;&#xa;, s.customer_id     &#xd;&#xa;, s.project_name          &#xd;&#xa;, s.lims_service_code     &#xd;&#xa;, s.lims_service_desc     &#xd;&#xa;, s.category_id     &#xd;&#xa;, s.cust_category_code    &#xd;&#xa;, s.sample_type_id        &#xd;&#xa;, s.shipvia               &#xd;&#xa;, s.purchase_order        &#xd;&#xa;, s.login_date            &#xd;&#xa;, s.received_date         &#xd;&#xa;, s.reviewed_date        &#xd;&#xa;, s.sampled_date       &#xd;&#xa;, s.started_date          &#xd;&#xa;, s.status_id             &#xd;&#xa;, s.in_alert              &#xd;&#xa;, s.in_spec               &#xd;&#xa;, s.worst_concl_level_id  &#xd;&#xa;, s.accredited            &#xd;&#xa;, s.source_visit_num      &#xd;&#xa;, s.lab_id                &#xd;&#xa;, s.mxns_entity_id        &#xd;&#xa;, s.product_id           &#xd;&#xa;, s.service_family_id     &#xd;&#xa;, s.template_id           &#xd;&#xa;, s.service_id            &#xd;&#xa;, s.updated_on                 &#xd;&#xa;, s.gdw_updated_on&#xd;&#xa;, s.gdw_delete_flg&#xd;&#xa;&#x29;&#x3b;</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>384</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+
+</transformation>

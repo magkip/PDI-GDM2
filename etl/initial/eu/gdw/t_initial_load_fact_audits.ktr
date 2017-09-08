@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>t_initial_load_fact_audits</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#x2f;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection>GDW_CTL</connection>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+<metrics-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>METRICS_DATE</id><enabled>Y</enabled><name>METRICS_DATE</name></field><field><id>METRICS_CODE</id><enabled>Y</enabled><name>METRICS_CODE</name></field><field><id>METRICS_DESCRIPTION</id><enabled>Y</enabled><name>METRICS_DESCRIPTION</name></field><field><id>METRICS_SUBJECT</id><enabled>Y</enabled><name>METRICS_SUBJECT</name></field><field><id>METRICS_TYPE</id><enabled>Y</enabled><name>METRICS_TYPE</name></field><field><id>METRICS_VALUE</id><enabled>Y</enabled><name>METRICS_VALUE</name></field></metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2017&#x2f;08&#x2f;01 09&#x3a;12&#x3a;29.475</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2017&#x2f;08&#x2f;01 09&#x3a;12&#x3a;29.475</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA&#x3d;</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>GDW_CTL</name>
+    <server/>
+    <type>GENERIC</type>
+    <access>JNDI</access>
+    <database>&#x24;&#x7b;mxns.gdw.jndi.gdw_ctl&#x7d;</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_GENERIC.SEQUENCE_FOR_BATCH_ID</code><attribute>LOG_TRANS_SEQ</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_GENERIC.SQL&#x3a; next sequence value</code><attribute>SELECT &#x27;SEQUENCE&#x27;.nextval</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>PREFERRED_SCHEMA_NAME</code><attribute>ctl</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>Y</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>GDW_INIT_TEMP</name>
+    <server/>
+    <type>GENERIC</type>
+    <access>Native</access>
+    <database/>
+    <port>1521</port>
+    <username>PENTAHO</username>
+    <password>Encrypted 2be98afc86af7978abf18a67f8cc2fe8d</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>CUSTOM_DRIVER_CLASS</code><attribute>net.snowflake.client.jdbc.SnowflakeDriver</attribute></attribute>
+      <attribute><code>CUSTOM_URL</code><attribute>jdbc&#x3a;snowflake&#x3a;&#x2f;&#x2f;mxns.snowflakecomputing.com</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>Y</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>sql&#x3a; insert E&#x24;_FACT_AUDITS</from><to>sql&#x3a; merge fact_audits</to><enabled>Y</enabled> </hop>
+  <hop> <from>generate row</from><to>sql&#x3a; insert E&#x24;_FACT_AUDITS</to><enabled>Y</enabled> </hop>
+  </order>
+  <step>
+    <name>generate row</name>
+    <type>RowGenerator</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+    </fields>
+    <limit>1</limit>
+    <never_ending>N</never_ending>
+    <interval_in_ms>5000</interval_in_ms>
+    <row_time_field>now</row_time_field>
+    <last_time_field>FiveSecondsAgo</last_time_field>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>384</xloc>
+      <yloc>48</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>sql&#x3a; insert E&#x24;_FACT_AUDITS</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>GDW_INIT_TEMP</connection>
+    <execute_each_row>N</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>Y</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>use &#x24;&#x7b;mxns.gdw.db.gdw&#x7d;.&#x24;&#x7b;mxns.gdw.schema.gdw&#x7d;&#x3b;&#xd;&#xa;&#xd;&#xa;insert into E&#x24;_FACT_AUDITS&#xd;&#xa;&#x28;&#xd;&#xa;  error_ts&#xd;&#xa;, error_description&#xd;&#xa;, audit_id&#xd;&#xa;, source_audit_num&#xd;&#xa;, checklist_id&#xd;&#xa;, source_checklist_num&#xd;&#xa;, source_variation_num&#xd;&#xa;, source_version_num&#xd;&#xa;, site_id&#xd;&#xa;, hierarchy_id&#xd;&#xa;, customer_id&#xd;&#xa;, source_visit_num&#xd;&#xa;, source_order_num&#xd;&#xa;, service_code&#xd;&#xa;, service_desc&#xd;&#xa;, status_id&#xd;&#xa;, audit_report_num&#xd;&#xa;, report_id&#xd;&#xa;, ap_report_id&#xd;&#xa;, al_report_id&#xd;&#xa;, shipvia&#xd;&#xa;, purchase_order&#xd;&#xa;, audit_start_date&#xd;&#xa;, audit_end_date&#xd;&#xa;, visit_start_date&#xd;&#xa;, visit_end_date&#xd;&#xa;, expected_date&#xd;&#xa;, submit_date&#xd;&#xa;, reviewed_date&#xd;&#xa;, additional_title&#xd;&#xa;, score&#xd;&#xa;, in_spec&#xd;&#xa;, in_alert&#xd;&#xa;, person_met&#xd;&#xa;, audit_comment&#xd;&#xa;, is_agreement_sent&#xd;&#xa;, is_agreement_signed&#xd;&#xa;, auditor_code&#xd;&#xa;, auditor_full_name&#xd;&#xa;, source_instance&#xd;&#xa;, mxns_entity_id&#xd;&#xa;, source_order_id&#xd;&#xa;, service_id&#xd;&#xa;, updated_on&#xd;&#xa;, gdw_updated_on&#xd;&#xa;, gdw_delete_flg&#xd;&#xa;&#x29;&#xd;&#xa;with working_set as&#xd;&#xa;&#x28;&#xd;&#xa;	with source_audit as &#xd;&#xa;	&#x28;&#xd;&#xa;		select &#xd;&#xa;			fact_audits_seq.nextval as audit_id&#xd;&#xa;		,	&#x27;&#x24;&#x7b;mxns.gdw.source_instance.estar&#x7d;&#x27; as source_instance&#xd;&#xa;		,	dd.document_id as source_audit_num&#xd;&#xa;		,	mcl.gdw_checklist_id as checklist_id&#xd;&#xa;		,	hcdh.chklst_id as source_checklist_num&#xd;&#xa;		,	hcdh.variation_id as source_variation_num&#xd;&#xa;		,	hcdh.variation_version as source_version_num&#xd;&#xa;		,	ms.gdw_site_id as site_id&#xd;&#xa;		,	gdw_hierarchy_id as hierarchy_id&#xd;&#xa;		,	mc.gdw_customer_id as customer_id&#xd;&#xa;		,	v.visit_id as source_visit_num&#xd;&#xa;		,	o.order_id as source_order_num&#xd;&#xa;		,	p.name as service_code&#xd;&#xa;		,	p.description as service_desc&#xd;&#xa;		,	gdw_status_id as status_id&#xd;&#xa;		,	rh.report_number as audit_report_num --multiple versions of order causing dups&#xd;&#xa;		,	mr_hi.gdw_report_id as report_id&#xd;&#xa;		,	mr_ap.gdw_report_id as ap_report_id&#xd;&#xa;		,	mr_al.gdw_report_id as al_report_id&#xd;&#xa;		,	o.shipvia as shipvia&#xd;&#xa;		,	o.client_order_id as purchase_order&#xd;&#xa;		,	hcdh.start_date as audit_start_date&#xd;&#xa;		,	hcdh.end_date as audit_end_date&#xd;&#xa;		,	v.start_date as visit_start_date&#xd;&#xa;		,	v.end_date as visit_end_date&#xd;&#xa;		,	null as expected_date&#xd;&#xa;		,	dls.timestamp as submit_date&#xd;&#xa;		,	dlr.timestamp as reviewed_date&#xd;&#xa;		,	hcdh.additional_title as additional_title&#xd;&#xa;		,	nvl&#x28;hcdb.item_score,hcdb.item_mark&#x29; as score&#xd;&#xa;		,	null as in_spec&#xd;&#xa;		,	null as in_alert&#xd;&#xa;		,	hcdh.person_meet as person_met&#xd;&#xa;		,	regexp_replace&#x28;hcdh.comments, &#x27;&#x3c;BR&#x3e;&#x27;,chr&#x28;13&#x29;&#x7c;&#x7c;chr&#x28;10&#x29;,1,0,&#x27;i&#x27;&#x29;  as audit_comment&#xd;&#xa;		,	null as is_agreement_sent&#xd;&#xa;		,	null as is_agreement_signed&#xd;&#xa;		,	o.scheduled_fieldworker as auditor_code&#xd;&#xa;		,	lu.full_name as auditor_full_name&#xd;&#xa;		,	gdw_mxns_entity_id as mxns_entity_id&#xd;&#xa;		,	o.order_id as source_order_id&#xd;&#xa;		,	msv.gdw_service_id as service_id&#xd;&#xa;		,	dd.timestamp as updated_on&#xd;&#xa;		from &#x24;&#x7b;mxns.gdw.db.estar_eu&#x7d;.&#x24;&#x7b;mxns.gdw.schema.estar_eu&#x7d;.doc_document dd&#xd;&#xa;		join &#x24;&#x7b;mxns.gdw.db.estar_eu&#x7d;.&#x24;&#x7b;mxns.gdw.schema.estar_eu&#x7d;.hi_chklst_data_head hcdh&#xd;&#xa;			on dd.document_id &#x3d; hcdh.document_id&#xd;&#xa;		join &#x24;&#x7b;mxns.gdw.schema.gdw_stage&#x7d;.map_checklists mcl&#xd;&#xa;			on hcdh.chklst_id &#x3d; mcl.source_checklist_num&#xd;&#xa;			and hcdh.variation_id &#x3d; mcl.source_variation_num&#xd;&#xa;			and hcdh.variation_version &#x3d; mcl.source_version_num&#xd;&#xa;		join &#x24;&#x7b;mxns.gdw.db.estar_eu&#x7d;.&#x24;&#x7b;mxns.gdw.schema.estar_eu&#x7d;.orders o&#xd;&#xa;			on dd.order_id &#x3d; o.order_id&#xd;&#xa;		join &#x24;&#x7b;mxns.gdw.schema.gdw_stage&#x7d;.map_sites ms&#xd;&#xa;			on o.location_name &#x3d; ms.source_site_code&#xd;&#xa;			and ms.source_instance &#x3d; &#x27;&#x24;&#x7b;mxns.gdw.source_instance.eu&#x7d;&#x27;&#xd;&#xa;		--join &#x24;&#x7b;mxns.gdw.db.estar_eu&#x7d;.&#x24;&#x7b;mxns.gdw.schema.estar_eu&#x7d;.stg_sites ss -- table doesnt exist&#xd;&#xa;			--on dd.document_id &#x3d; ss.document_id&#xd;&#xa;		join &#x24;&#x7b;mxns.gdw.schema.gdw_stage&#x7d;.map_customers mc&#xd;&#xa;			on o.contact_role &#x3d; mc.source_customer_code&#xd;&#xa;			and mc.source_instance &#x3d; &#x27;&#x24;&#x7b;mxns.gdw.source_instance.eu&#x7d;&#x27;&#xd;&#xa;		join &#x24;&#x7b;mxns.gdw.schema.gdw_stage&#x7d;.map_cust_hierarchies mch&#xd;&#xa;			on o.contact_role &#x3d; mch.source_hierarchy_code&#xd;&#xa;			and mch.source_hierarchy_type &#x3d; &#x27;CONTACT_ROLE&#x27;&#xd;&#xa;			and mch.source_instance &#x3d; &#x27;&#x24;&#x7b;mxns.gdw.source_instance.eu&#x7d;&#x27;&#xd;&#xa;		join &#x24;&#x7b;mxns.gdw.db.estar_eu&#x7d;.&#x24;&#x7b;mxns.gdw.schema.estar_eu&#x7d;.visit v&#xd;&#xa;			on o.visit_id &#x3d; v.visit_id&#xd;&#xa;		join &#x24;&#x7b;mxns.gdw.db.estar_eu&#x7d;.&#x24;&#x7b;mxns.gdw.schema.estar_eu&#x7d;.program p&#xd;&#xa;			on o.program_name &#x3d; p.name&#xd;&#xa;			and o.program_version &#x3d; p.version&#xd;&#xa;		join &#x24;&#x7b;mxns.gdw.schema.gdw_stage&#x7d;.map_statuses mst&#xd;&#xa;			on to_varchar&#x28;dd.status&#x29; &#x3d; mst.source_status_code&#xd;&#xa;			and mst.source_instance &#x3d; &#x27;&#x24;&#x7b;mxns.gdw.source_instance.eu&#x7d;&#x27;&#xd;&#xa;		join &#x24;&#x7b;mxns.gdw.db.estar_eu&#x7d;.&#x24;&#x7b;mxns.gdw.schema.estar_eu&#x7d;.report_hi rh&#xd;&#xa;			on o.order_id &#x3d; rh.order_id&#xd;&#xa;			and rh.superseded_by is null&#xd;&#xa;		join &#x24;&#x7b;mxns.gdw.db.estar_eu&#x7d;.&#x24;&#x7b;mxns.gdw.schema.estar_eu&#x7d;.hi_chklst_data_body hcdb&#xd;&#xa;			on dd.document_id &#x3d; hcdb.document_id&#xd;&#xa;			and hcdb.item_option like &#x27;&#x25;&#x24;&#x25;&#x27;&#xd;&#xa;		left join &#x24;&#x7b;mxns.gdw.schema.gdw_stage&#x7d;.map_reports mr_hi -- NO HI in map table. Map table &#x26; joins must be verified &#xd;&#xa;			on rh.report_number &#x3d; mr_hi.source_report_code&#xd;&#xa;			and mr_hi.source_report_type &#x3d; &#x27;HI&#x27;&#xd;&#xa;			and mr_hi.source_instance &#x3d; &#x27;&#x24;&#x7b;mxns.gdw.source_instance.estar&#x7d;&#x27;&#xd;&#xa;		left join &#x24;&#x7b;mxns.gdw.schema.gdw_stage&#x7d;.map_reports mr_ap&#xd;&#xa;			on rh.report_number &#x3d; mr_ap.source_report_code&#xd;&#xa;			and mr_ap.source_report_type &#x3d; &#x27;AP&#x27; &#xd;&#xa;			and mr_ap.source_instance &#x3d; &#x27;&#x24;&#x7b;mxns.gdw.source_instance.estar&#x7d;&#x27;&#xd;&#xa;		left join &#x24;&#x7b;mxns.gdw.schema.gdw_stage&#x7d;.map_reports mr_al&#xd;&#xa;			on rh.report_number &#x3d; mr_al.source_report_code&#xd;&#xa;			and mr_al.source_report_type &#x3d; &#x27;AL&#x27;&#xd;&#xa;			and mr_al.source_instance &#x3d; &#x27;&#x24;&#x7b;mxns.gdw.source_instance.estar&#x7d;&#x27;&#xd;&#xa;		join &#x28;&#xd;&#xa;				select &#xd;&#xa;					document_id &#xd;&#xa;				, 	min&#x28;timestamp&#x29; as timestamp &#xd;&#xa;				from &#x24;&#x7b;mxns.gdw.db.estar_eu&#x7d;.&#x24;&#x7b;mxns.gdw.schema.estar_eu&#x7d;.doc_log &#xd;&#xa;				group by 1&#xd;&#xa;			&#x29; dls&#xd;&#xa;			on dd.document_id &#x3d; dls.document_id&#xd;&#xa;		join &#x28;&#xd;&#xa;				select &#xd;&#xa;					document_id&#xd;&#xa;				, 	max&#x28;timestamp&#x29; as timestamp &#xd;&#xa;				from &#x24;&#x7b;mxns.gdw.db.estar_eu&#x7d;.&#x24;&#x7b;mxns.gdw.schema.estar_eu&#x7d;.doc_log &#xd;&#xa;				where status &#x3d; 5 &#xd;&#xa;				group by 1&#xd;&#xa;			&#x29; dlr&#xd;&#xa;			on dd.document_id &#x3d; dlr.document_id&#xd;&#xa;		join &#x24;&#x7b;mxns.gdw.db.estar_eu&#x7d;.&#x24;&#x7b;mxns.gdw.schema.estar_eu&#x7d;.lims_users lu&#xd;&#xa;			on o.user_id &#x3d; lu.user_name&#xd;&#xa;		join &#x24;&#x7b;mxns.gdw.schema.gdw_stage&#x7d;.map_mxns_entity mme&#xd;&#xa;			on rh.owner_location &#x3d; mme.source_code&#xd;&#xa;			and mme.source_code_type &#x3d; &#x27;OWNER LOCATION&#x27;&#xd;&#xa;			and mme.source_instance &#x3d; &#x27;&#x24;&#x7b;mxns.gdw.source_instance.eu&#x7d;&#x27;&#xd;&#xa;		join &#x24;&#x7b;mxns.gdw.schema.gdw_stage&#x7d;.map_services msv&#xd;&#xa;			on p.name &#x3d; msv.service_code&#xd;&#xa;			and p.version &#x3d; msv.service_version&#xd;&#xa;			and msv.source_instance &#x3d; &#x27;&#x24;&#x7b;mxns.gdw.source_instance.eu&#x7d;&#x27;&#xd;&#xa;	&#x29;&#xd;&#xa;	select&#xd;&#xa;		audit_id&#xd;&#xa;	,   source_audit_num&#xd;&#xa;	,   checklist_id&#xd;&#xa;	,   source_checklist_num&#xd;&#xa;	,   source_variation_num&#xd;&#xa;	,   source_version_num&#xd;&#xa;	,   site_id&#xd;&#xa;	,   hierarchy_id&#xd;&#xa;	,   customer_id&#xd;&#xa;	,   source_visit_num&#xd;&#xa;	,   source_order_num&#xd;&#xa;	,   service_code&#xd;&#xa;	,   service_desc&#xd;&#xa;	,   status_id&#xd;&#xa;	,   audit_report_num&#xd;&#xa;	,   report_id&#xd;&#xa;	,   ap_report_id&#xd;&#xa;	,   al_report_id&#xd;&#xa;	,   shipvia&#xd;&#xa;	,   purchase_order&#xd;&#xa;	,   audit_start_date&#xd;&#xa;	,   audit_end_date&#xd;&#xa;	,   visit_start_date&#xd;&#xa;	,   visit_end_date&#xd;&#xa;	,   expected_date&#xd;&#xa;	,   submit_date&#xd;&#xa;	,   reviewed_date&#xd;&#xa;	,   additional_title&#xd;&#xa;	,   score&#xd;&#xa;	,   in_spec&#xd;&#xa;	,   in_alert&#xd;&#xa;	,   person_met&#xd;&#xa;	,   audit_comment&#xd;&#xa;	,   is_agreement_sent&#xd;&#xa;	,   is_agreement_signed&#xd;&#xa;	,   auditor_code&#xd;&#xa;	,   auditor_full_name&#xd;&#xa;	,   source_instance&#xd;&#xa;	,   mxns_entity_id&#xd;&#xa;	,   source_order_id&#xd;&#xa;	,   service_id&#xd;&#xa;	,   updated_on&#xd;&#xa;	,	current_timestamp as gdw_updated_on&#xd;&#xa;	,	&#x27;false&#x27; as gdw_delete_flg&#xd;&#xa;	from source_audit&#xd;&#xa;&#x29;&#xd;&#xa;select current_timestamp, &#x27;duplicate record&#x27;, w.audit_id, w.source_audit_num, w.checklist_id, w.source_checklist_num, w.source_variation_num, w.source_version_num, w.site_id, w.hierarchy_id, w.customer_id, w.source_visit_num, w.source_order_num, w.service_code, w.service_desc, w.status_id, w.audit_report_num, w.report_id, w.ap_report_id, w.al_report_id, w.shipvia, w.purchase_order, w.audit_start_date, w.audit_end_date, w.visit_start_date, w.visit_end_date, w.expected_date, w.submit_date, w.reviewed_date, w.additional_title, w.score, w.in_spec, w.in_alert, w.person_met, w.audit_comment, w.is_agreement_sent, w.is_agreement_signed, w.auditor_code, w.auditor_full_name, w.source_instance, w.mxns_entity_id, w.source_order_id, w.service_id, w.updated_on, w.gdw_updated_on, w.gdw_delete_flg&#xd;&#xa;from working_set w&#xd;&#xa;join	&#xd;&#xa;&#x28;&#xd;&#xa;	select source_instance, source_audit_num&#xd;&#xa;	from working_set&#xd;&#xa;	group by source_instance, source_audit_num&#xd;&#xa;	having count&#x28;&#x2a;&#x29; &#x3e; 1&#xd;&#xa;&#x29; j on j.source_instance &#x3d; w.source_instance&#xd;&#xa;	and j.source_audit_num &#x3d; w.source_audit_num&#xd;&#xa;union&#xd;&#xa;select current_timestamp, &#x27;audit_id is null and field is mandatory&#x27;, w.audit_id, w.source_audit_num, w.checklist_id, w.source_checklist_num, w.source_variation_num, w.source_version_num, w.site_id, w.hierarchy_id, w.customer_id, w.source_visit_num, w.source_order_num, w.service_code, w.service_desc, w.status_id, w.audit_report_num, w.report_id, w.ap_report_id, w.al_report_id, w.shipvia, w.purchase_order, w.audit_start_date, w.audit_end_date, w.visit_start_date, w.visit_end_date, w.expected_date, w.submit_date, w.reviewed_date, w.additional_title, w.score, w.in_spec, w.in_alert, w.person_met, w.audit_comment, w.is_agreement_sent, w.is_agreement_signed, w.auditor_code, w.auditor_full_name, w.source_instance, w.mxns_entity_id, w.source_order_id, w.service_id, w.updated_on, w.gdw_updated_on, w.gdw_delete_flg&#xd;&#xa;from working_set w&#xd;&#xa;where w.audit_id is null&#xd;&#xa;union&#xd;&#xa;select current_timestamp, &#x27;source_audit_num is null and field is mandatory&#x27;, w.audit_id, w.source_audit_num, w.checklist_id, w.source_checklist_num, w.source_variation_num, w.source_version_num, w.site_id, w.hierarchy_id, w.customer_id, w.source_visit_num, w.source_order_num, w.service_code, w.service_desc, w.status_id, w.audit_report_num, w.report_id, w.ap_report_id, w.al_report_id, w.shipvia, w.purchase_order, w.audit_start_date, w.audit_end_date, w.visit_start_date, w.visit_end_date, w.expected_date, w.submit_date, w.reviewed_date, w.additional_title, w.score, w.in_spec, w.in_alert, w.person_met, w.audit_comment, w.is_agreement_sent, w.is_agreement_signed, w.auditor_code, w.auditor_full_name, w.source_instance, w.mxns_entity_id, w.source_order_id, w.service_id, w.updated_on, w.gdw_updated_on, w.gdw_delete_flg&#xd;&#xa;from working_set w&#xd;&#xa;where w.source_audit_num is null&#xd;&#xa;union&#xd;&#xa;select current_timestamp, &#x27;source_instance is null and field is mandatory&#x27;, w.audit_id, w.source_audit_num, w.checklist_id, w.source_checklist_num, w.source_variation_num, w.source_version_num, w.site_id, w.hierarchy_id, w.customer_id, w.source_visit_num, w.source_order_num, w.service_code, w.service_desc, w.status_id, w.audit_report_num, w.report_id, w.ap_report_id, w.al_report_id, w.shipvia, w.purchase_order, w.audit_start_date, w.audit_end_date, w.visit_start_date, w.visit_end_date, w.expected_date, w.submit_date, w.reviewed_date, w.additional_title, w.score, w.in_spec, w.in_alert, w.person_met, w.audit_comment, w.is_agreement_sent, w.is_agreement_signed, w.auditor_code, w.auditor_full_name, w.source_instance, w.mxns_entity_id, w.source_order_id, w.service_id, w.updated_on, w.gdw_updated_on, w.gdw_delete_flg&#xd;&#xa;from working_set w&#xd;&#xa;where w.source_instance is null&#xd;&#xa;&#x3b;</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>384</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>sql&#x3a; merge fact_audits</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>GDW_INIT_TEMP</connection>
+    <execute_each_row>N</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>Y</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>use &#x24;&#x7b;mxns.gdw.db.gdw&#x7d;.&#x24;&#x7b;mxns.gdw.schema.gdw&#x7d;&#x3b;&#xd;&#xa;&#xd;&#xa;merge into fact_audits d&#xd;&#xa;using&#xd;&#xa;&#x28;&#xd;&#xa;	with working_set as&#xd;&#xa;	&#x28;&#xd;&#xa;		with source_audit as &#xd;&#xa;		&#x28;&#xd;&#xa;			select &#xd;&#xa;				fact_audits_seq.nextval as audit_id&#xd;&#xa;			,	&#x27;&#x24;&#x7b;mxns.gdw.source_instance.estar&#x7d;&#x27; as source_instance&#xd;&#xa;			,	dd.document_id as source_audit_num&#xd;&#xa;			,	mcl.gdw_checklist_id as checklist_id&#xd;&#xa;			,	hcdh.chklst_id as source_checklist_num&#xd;&#xa;			,	hcdh.variation_id as source_variation_num&#xd;&#xa;			,	hcdh.variation_version as source_version_num&#xd;&#xa;			,	ms.gdw_site_id as site_id&#xd;&#xa;			,	gdw_hierarchy_id as hierarchy_id&#xd;&#xa;			,	mc.gdw_customer_id as customer_id&#xd;&#xa;			,	v.visit_id as source_visit_num&#xd;&#xa;			,	o.order_id as source_order_num&#xd;&#xa;			,	p.name as service_code&#xd;&#xa;			,	p.description as service_desc&#xd;&#xa;			,	gdw_status_id as status_id&#xd;&#xa;			,	rh.report_number as audit_report_num --multiple versions of order causing dups&#xd;&#xa;			,	mr_hi.gdw_report_id as report_id&#xd;&#xa;			,	mr_ap.gdw_report_id as ap_report_id&#xd;&#xa;			,	mr_al.gdw_report_id as al_report_id&#xd;&#xa;			,	o.shipvia as shipvia&#xd;&#xa;			,	o.client_order_id as purchase_order&#xd;&#xa;			,	hcdh.start_date as audit_start_date&#xd;&#xa;			,	hcdh.end_date as audit_end_date&#xd;&#xa;			,	v.start_date as visit_start_date&#xd;&#xa;			,	v.end_date as visit_end_date&#xd;&#xa;			,	null as expected_date&#xd;&#xa;			,	dls.timestamp as submit_date&#xd;&#xa;			,	dlr.timestamp as reviewed_date&#xd;&#xa;			,	hcdh.additional_title as additional_title&#xd;&#xa;			,	nvl&#x28;hcdb.item_score,hcdb.item_mark&#x29; as score&#xd;&#xa;			,	null as in_spec&#xd;&#xa;			,	null as in_alert&#xd;&#xa;			,	hcdh.person_meet as person_met&#xd;&#xa;			,	regexp_replace&#x28;hcdh.comments, &#x27;&#x3c;BR&#x3e;&#x27;,chr&#x28;13&#x29;&#x7c;&#x7c;chr&#x28;10&#x29;,1,0,&#x27;i&#x27;&#x29;  as audit_comment&#xd;&#xa;			,	null as is_agreement_sent&#xd;&#xa;			,	null as is_agreement_signed&#xd;&#xa;			,	o.scheduled_fieldworker as auditor_code&#xd;&#xa;			,	lu.full_name as auditor_full_name&#xd;&#xa;			,	gdw_mxns_entity_id as mxns_entity_id&#xd;&#xa;			,	o.order_id as source_order_id&#xd;&#xa;			,	msv.gdw_service_id as service_id&#xd;&#xa;			,	dd.timestamp as updated_on&#xd;&#xa;			from &#x24;&#x7b;mxns.gdw.db.estar_eu&#x7d;.&#x24;&#x7b;mxns.gdw.schema.estar_eu&#x7d;.doc_document dd&#xd;&#xa;			join &#x24;&#x7b;mxns.gdw.db.estar_eu&#x7d;.&#x24;&#x7b;mxns.gdw.schema.estar_eu&#x7d;.hi_chklst_data_head hcdh&#xd;&#xa;				on dd.document_id &#x3d; hcdh.document_id&#xd;&#xa;			join &#x24;&#x7b;mxns.gdw.schema.gdw_stage&#x7d;.map_checklists mcl&#xd;&#xa;				on hcdh.chklst_id &#x3d; mcl.source_checklist_num&#xd;&#xa;				and hcdh.variation_id &#x3d; mcl.source_variation_num&#xd;&#xa;				and hcdh.variation_version &#x3d; mcl.source_version_num&#xd;&#xa;			join &#x24;&#x7b;mxns.gdw.db.estar_eu&#x7d;.&#x24;&#x7b;mxns.gdw.schema.estar_eu&#x7d;.orders o&#xd;&#xa;				on dd.order_id &#x3d; o.order_id&#xd;&#xa;			join &#x24;&#x7b;mxns.gdw.schema.gdw_stage&#x7d;.map_sites ms&#xd;&#xa;				on o.location_name &#x3d; ms.source_site_code&#xd;&#xa;				and ms.source_instance &#x3d; &#x27;&#x24;&#x7b;mxns.gdw.source_instance.eu&#x7d;&#x27;&#xd;&#xa;			--join &#x24;&#x7b;mxns.gdw.db.estar_eu&#x7d;.&#x24;&#x7b;mxns.gdw.schema.estar_eu&#x7d;.stg_sites ss -- table doesnt exist&#xd;&#xa;				--on dd.document_id &#x3d; ss.document_id&#xd;&#xa;			join &#x24;&#x7b;mxns.gdw.schema.gdw_stage&#x7d;.map_customers mc&#xd;&#xa;				on o.contact_role &#x3d; mc.source_customer_code&#xd;&#xa;				and mc.source_instance &#x3d; &#x27;&#x24;&#x7b;mxns.gdw.source_instance.eu&#x7d;&#x27;&#xd;&#xa;			join &#x24;&#x7b;mxns.gdw.schema.gdw_stage&#x7d;.map_cust_hierarchies mch&#xd;&#xa;				on o.contact_role &#x3d; mch.source_hierarchy_code&#xd;&#xa;				and mch.source_hierarchy_type &#x3d; &#x27;CONTACT_ROLE&#x27;&#xd;&#xa;				and mch.source_instance &#x3d; &#x27;&#x24;&#x7b;mxns.gdw.source_instance.eu&#x7d;&#x27;&#xd;&#xa;			join &#x24;&#x7b;mxns.gdw.db.estar_eu&#x7d;.&#x24;&#x7b;mxns.gdw.schema.estar_eu&#x7d;.visit v&#xd;&#xa;				on o.visit_id &#x3d; v.visit_id&#xd;&#xa;			join &#x24;&#x7b;mxns.gdw.db.estar_eu&#x7d;.&#x24;&#x7b;mxns.gdw.schema.estar_eu&#x7d;.program p&#xd;&#xa;				on o.program_name &#x3d; p.name&#xd;&#xa;				and o.program_version &#x3d; p.version&#xd;&#xa;			join &#x24;&#x7b;mxns.gdw.schema.gdw_stage&#x7d;.map_statuses mst&#xd;&#xa;				on to_varchar&#x28;dd.status&#x29; &#x3d; mst.source_status_code&#xd;&#xa;				and mst.source_instance &#x3d; &#x27;&#x24;&#x7b;mxns.gdw.source_instance.eu&#x7d;&#x27;&#xd;&#xa;			join &#x24;&#x7b;mxns.gdw.db.estar_eu&#x7d;.&#x24;&#x7b;mxns.gdw.schema.estar_eu&#x7d;.report_hi rh&#xd;&#xa;				on o.order_id &#x3d; rh.order_id&#xd;&#xa;				and rh.superseded_by is null&#xd;&#xa;			join &#x24;&#x7b;mxns.gdw.db.estar_eu&#x7d;.&#x24;&#x7b;mxns.gdw.schema.estar_eu&#x7d;.hi_chklst_data_body hcdb &#x2f;&#x2f; old join from estar document, causing dups&#xd;&#xa;				on dd.document_id &#x3d; hcdb.document_id&#xd;&#xa;				and hcdb.item_option like &#x27;&#x25;&#x24;&#x25;&#x27;&#xd;&#xa;			left join &#x24;&#x7b;mxns.gdw.schema.gdw_stage&#x7d;.map_reports mr_hi -- NO HI in map table. Map table &#x26; joins must be verified &#xd;&#xa;				on rh.report_number &#x3d; mr_hi.source_report_code&#xd;&#xa;				and mr_hi.source_report_type &#x3d; &#x27;HI&#x27;&#xd;&#xa;				and mr_hi.source_instance &#x3d; &#x27;&#x24;&#x7b;mxns.gdw.source_instance.estar&#x7d;&#x27;&#xd;&#xa;			left join &#x24;&#x7b;mxns.gdw.schema.gdw_stage&#x7d;.map_reports mr_ap&#xd;&#xa;				on rh.report_number &#x3d; mr_ap.source_report_code&#xd;&#xa;				and mr_ap.source_report_type &#x3d; &#x27;AP&#x27; &#xd;&#xa;				and mr_ap.source_instance &#x3d; &#x27;&#x24;&#x7b;mxns.gdw.source_instance.estar&#x7d;&#x27;&#xd;&#xa;			left join &#x24;&#x7b;mxns.gdw.schema.gdw_stage&#x7d;.map_reports mr_al&#xd;&#xa;				on rh.report_number &#x3d; mr_al.source_report_code&#xd;&#xa;				and mr_al.source_report_type &#x3d; &#x27;AL&#x27;&#xd;&#xa;				and mr_al.source_instance &#x3d; &#x27;&#x24;&#x7b;mxns.gdw.source_instance.estar&#x7d;&#x27;&#xd;&#xa;			join &#x28;&#xd;&#xa;					select &#xd;&#xa;						document_id &#xd;&#xa;					, 	min&#x28;timestamp&#x29; as timestamp &#xd;&#xa;					from &#x24;&#x7b;mxns.gdw.db.estar_eu&#x7d;.&#x24;&#x7b;mxns.gdw.schema.estar_eu&#x7d;.doc_log &#xd;&#xa;					group by 1&#xd;&#xa;				&#x29; dls&#xd;&#xa;				on dd.document_id &#x3d; dls.document_id&#xd;&#xa;			join &#x28;&#xd;&#xa;					select &#xd;&#xa;						document_id&#xd;&#xa;					, 	max&#x28;timestamp&#x29; as timestamp &#xd;&#xa;					from &#x24;&#x7b;mxns.gdw.db.estar_eu&#x7d;.&#x24;&#x7b;mxns.gdw.schema.estar_eu&#x7d;.doc_log &#xd;&#xa;					where status &#x3d; 5 &#xd;&#xa;					group by 1&#xd;&#xa;				&#x29; dlr&#xd;&#xa;				on dd.document_id &#x3d; dlr.document_id&#xd;&#xa;			join &#x24;&#x7b;mxns.gdw.db.estar_eu&#x7d;.&#x24;&#x7b;mxns.gdw.schema.estar_eu&#x7d;.lims_users lu&#xd;&#xa;				on o.user_id &#x3d; lu.user_name&#xd;&#xa;			join &#x24;&#x7b;mxns.gdw.schema.gdw_stage&#x7d;.map_mxns_entity mme&#xd;&#xa;				on rh.owner_location &#x3d; mme.source_code&#xd;&#xa;				and mme.source_code_type &#x3d; &#x27;OWNER LOCATION&#x27;&#xd;&#xa;				and mme.source_instance &#x3d; &#x27;&#x24;&#x7b;mxns.gdw.source_instance.eu&#x7d;&#x27;&#xd;&#xa;			join &#x24;&#x7b;mxns.gdw.schema.gdw_stage&#x7d;.map_services msv&#xd;&#xa;				on p.name &#x3d; msv.service_code&#xd;&#xa;				and p.version &#x3d; msv.service_version&#xd;&#xa;				and msv.source_instance &#x3d; &#x27;&#x24;&#x7b;mxns.gdw.source_instance.eu&#x7d;&#x27;&#xd;&#xa;		&#x29;&#xd;&#xa;		select&#xd;&#xa;		    audit_id&#xd;&#xa;		,   source_audit_num&#xd;&#xa;		,   checklist_id&#xd;&#xa;		,   source_checklist_num&#xd;&#xa;		,   source_variation_num&#xd;&#xa;		,   source_version_num&#xd;&#xa;		,   site_id&#xd;&#xa;		,   hierarchy_id&#xd;&#xa;		,   customer_id&#xd;&#xa;		,   source_visit_num&#xd;&#xa;		,   source_order_num&#xd;&#xa;		,   service_code&#xd;&#xa;		,   service_desc&#xd;&#xa;		,   status_id&#xd;&#xa;		,   audit_report_num&#xd;&#xa;		,   report_id&#xd;&#xa;		,   ap_report_id&#xd;&#xa;		,   al_report_id&#xd;&#xa;		,   shipvia&#xd;&#xa;		,   purchase_order&#xd;&#xa;		,   audit_start_date&#xd;&#xa;		,   audit_end_date&#xd;&#xa;		,   visit_start_date&#xd;&#xa;		,   visit_end_date&#xd;&#xa;		,   expected_date&#xd;&#xa;		,   submit_date&#xd;&#xa;		,   reviewed_date&#xd;&#xa;		,   additional_title&#xd;&#xa;		,   score&#xd;&#xa;		,   in_spec&#xd;&#xa;		,   in_alert&#xd;&#xa;		,   person_met&#xd;&#xa;		,   audit_comment&#xd;&#xa;		,   is_agreement_sent&#xd;&#xa;		,   is_agreement_signed&#xd;&#xa;		,   auditor_code&#xd;&#xa;		,   auditor_full_name&#xd;&#xa;		,   source_instance&#xd;&#xa;		,   mxns_entity_id&#xd;&#xa;		,   source_order_id&#xd;&#xa;		,   service_id&#xd;&#xa;		,   updated_on&#xd;&#xa;		,	current_timestamp as gdw_updated_on&#xd;&#xa;		,	&#x27;false&#x27; as gdw_delete_flg&#xd;&#xa;		from source_audit&#xd;&#xa;	&#x29;&#xd;&#xa;	select&#xd;&#xa;		w.audit_id&#xd;&#xa;	,   w.source_audit_num&#xd;&#xa;	,   w.checklist_id&#xd;&#xa;	,   w.source_checklist_num&#xd;&#xa;	,   w.source_variation_num&#xd;&#xa;	,   w.source_version_num&#xd;&#xa;	,   w.site_id&#xd;&#xa;	,   w.hierarchy_id&#xd;&#xa;	,   w.customer_id&#xd;&#xa;	,   w.source_visit_num&#xd;&#xa;	,   w.source_order_num&#xd;&#xa;	,   w.service_code&#xd;&#xa;	,   w.service_desc&#xd;&#xa;	,   w.status_id&#xd;&#xa;	,   w.audit_report_num&#xd;&#xa;	,   w.report_id&#xd;&#xa;	,   w.ap_report_id&#xd;&#xa;	,   w.al_report_id&#xd;&#xa;	,   w.shipvia&#xd;&#xa;	,   w.purchase_order&#xd;&#xa;	,   w.audit_start_date&#xd;&#xa;	,   w.audit_end_date&#xd;&#xa;	,   w.visit_start_date&#xd;&#xa;	,   w.visit_end_date&#xd;&#xa;	,   w.expected_date&#xd;&#xa;	,   w.submit_date&#xd;&#xa;	,   w.reviewed_date&#xd;&#xa;	,   w.additional_title&#xd;&#xa;	,   w.score&#xd;&#xa;	,   w.in_spec&#xd;&#xa;	,   w.in_alert&#xd;&#xa;	,   w.person_met&#xd;&#xa;	,   w.audit_comment&#xd;&#xa;	,   w.is_agreement_sent&#xd;&#xa;	,   w.is_agreement_signed&#xd;&#xa;	,   w.auditor_code&#xd;&#xa;	,   w.auditor_full_name&#xd;&#xa;	,   w.source_instance&#xd;&#xa;	,   w.mxns_entity_id&#xd;&#xa;	,   w.source_order_id&#xd;&#xa;	,   w.service_id&#xd;&#xa;	,   w.updated_on&#xd;&#xa;	,	w.gdw_updated_on&#xd;&#xa;	,	w.gdw_delete_flg&#xd;&#xa;	from working_set w&#xd;&#xa;	join	&#xd;&#xa;	&#x28;&#xd;&#xa;		select source_instance, source_audit_num&#xd;&#xa;		from working_set&#xd;&#xa;		group by source_instance, source_audit_num&#xd;&#xa;		having count&#x28;&#x2a;&#x29; &#x3d; 1&#xd;&#xa;	&#x29; j on j.source_instance &#x3d; w.source_instance&#xd;&#xa;		and j.source_audit_num &#x3d; w.source_audit_num&#xd;&#xa;	where w.audit_id is not null&#xd;&#xa;	and w.source_audit_num is not null&#xd;&#xa;	and w.source_instance is not null&#xd;&#xa;&#x29; as s on s.source_instance &#x3d; d.source_instance and s.source_audit_num &#x3d; d.source_audit_num&#xd;&#xa;when matched then update set&#xd;&#xa;  d.audit_id &#x3d; s.audit_id&#xd;&#xa;, d.checklist_id &#x3d; s.checklist_id&#xd;&#xa;, d.source_checklist_num &#x3d; s.source_checklist_num&#xd;&#xa;, d.source_variation_num &#x3d; s.source_variation_num&#xd;&#xa;, d.source_version_num &#x3d; s.source_version_num&#xd;&#xa;, d.site_id &#x3d; s.site_id&#xd;&#xa;, d.hierarchy_id &#x3d; s.hierarchy_id&#xd;&#xa;, d.customer_id &#x3d; s.customer_id&#xd;&#xa;, d.source_visit_num &#x3d; s.source_visit_num&#xd;&#xa;, d.source_order_num &#x3d; s.source_order_num&#xd;&#xa;, d.service_code &#x3d; s.service_code&#xd;&#xa;, d.service_desc &#x3d; s.service_desc&#xd;&#xa;, d.status_id &#x3d; s.status_id&#xd;&#xa;, d.audit_report_num &#x3d; s.audit_report_num&#xd;&#xa;, d.report_id &#x3d; s.report_id&#xd;&#xa;, d.ap_report_id &#x3d; s.ap_report_id&#xd;&#xa;, d.al_report_id &#x3d; s.al_report_id&#xd;&#xa;, d.shipvia &#x3d; s.shipvia&#xd;&#xa;, d.purchase_order &#x3d; s.purchase_order&#xd;&#xa;, d.audit_start_date &#x3d; s.audit_start_date&#xd;&#xa;, d.audit_end_date &#x3d; s.audit_end_date&#xd;&#xa;, d.visit_start_date &#x3d; s.visit_start_date&#xd;&#xa;, d.visit_end_date &#x3d; s.visit_end_date&#xd;&#xa;, d.expected_date &#x3d; s.expected_date&#xd;&#xa;, d.submit_date &#x3d; s.submit_date&#xd;&#xa;, d.reviewed_date &#x3d; s.reviewed_date&#xd;&#xa;, d.additional_title &#x3d; s.additional_title&#xd;&#xa;, d.score &#x3d; s.score&#xd;&#xa;, d.in_spec &#x3d; s.in_spec&#xd;&#xa;, d.in_alert &#x3d; s.in_alert&#xd;&#xa;, d.person_met &#x3d; s.person_met&#xd;&#xa;, d.audit_comment &#x3d; s.audit_comment&#xd;&#xa;, d.is_agreement_sent &#x3d; s.is_agreement_sent&#xd;&#xa;, d.is_agreement_signed &#x3d; s.is_agreement_signed&#xd;&#xa;, d.auditor_code &#x3d; s.auditor_code&#xd;&#xa;, d.auditor_full_name &#x3d; s.auditor_full_name&#xd;&#xa;, d.source_instance &#x3d; s.source_instance&#xd;&#xa;, d.mxns_entity_id &#x3d; s.mxns_entity_id&#xd;&#xa;, d.source_order_id &#x3d; s.source_order_id&#xd;&#xa;, d.service_id &#x3d; s.service_id&#xd;&#xa;, d.updated_on &#x3d; s.updated_on&#xd;&#xa;, d.gdw_updated_on &#x3d; s.gdw_updated_on&#xd;&#xa;, d.gdw_delete_flg &#x3d; s.gdw_delete_flg&#xd;&#xa;when not matched then insert &#xd;&#xa;&#x28;&#xd;&#xa;  audit_id&#xd;&#xa;, source_audit_num&#xd;&#xa;, checklist_id&#xd;&#xa;, source_checklist_num&#xd;&#xa;, source_variation_num&#xd;&#xa;, source_version_num&#xd;&#xa;, site_id&#xd;&#xa;, hierarchy_id&#xd;&#xa;, customer_id&#xd;&#xa;, source_visit_num&#xd;&#xa;, source_order_num&#xd;&#xa;, service_code&#xd;&#xa;, service_desc&#xd;&#xa;, status_id&#xd;&#xa;, audit_report_num&#xd;&#xa;, report_id&#xd;&#xa;, ap_report_id&#xd;&#xa;, al_report_id&#xd;&#xa;, shipvia&#xd;&#xa;, purchase_order&#xd;&#xa;, audit_start_date&#xd;&#xa;, audit_end_date&#xd;&#xa;, visit_start_date&#xd;&#xa;, visit_end_date&#xd;&#xa;, expected_date&#xd;&#xa;, submit_date&#xd;&#xa;, reviewed_date&#xd;&#xa;, additional_title&#xd;&#xa;, score&#xd;&#xa;, in_spec&#xd;&#xa;, in_alert&#xd;&#xa;, person_met&#xd;&#xa;, audit_comment&#xd;&#xa;, is_agreement_sent&#xd;&#xa;, is_agreement_signed&#xd;&#xa;, auditor_code&#xd;&#xa;, auditor_full_name&#xd;&#xa;, source_instance&#xd;&#xa;, mxns_entity_id&#xd;&#xa;, source_order_id&#xd;&#xa;, service_id&#xd;&#xa;, updated_on&#xd;&#xa;, gdw_updated_on&#xd;&#xa;, gdw_delete_flg&#xd;&#xa;&#x29;&#xd;&#xa;values &#xd;&#xa;&#x28;&#xd;&#xa;  s.audit_id&#xd;&#xa;, s.source_audit_num&#xd;&#xa;, s.checklist_id&#xd;&#xa;, s.source_checklist_num&#xd;&#xa;, s.source_variation_num&#xd;&#xa;, s.source_version_num&#xd;&#xa;, s.site_id&#xd;&#xa;, s.hierarchy_id&#xd;&#xa;, s.customer_id&#xd;&#xa;, s.source_visit_num&#xd;&#xa;, s.source_order_num&#xd;&#xa;, s.service_code&#xd;&#xa;, s.service_desc&#xd;&#xa;, s.status_id&#xd;&#xa;, s.audit_report_num&#xd;&#xa;, s.report_id&#xd;&#xa;, s.ap_report_id&#xd;&#xa;, s.al_report_id&#xd;&#xa;, s.shipvia&#xd;&#xa;, s.purchase_order&#xd;&#xa;, s.audit_start_date&#xd;&#xa;, s.audit_end_date&#xd;&#xa;, s.visit_start_date&#xd;&#xa;, s.visit_end_date&#xd;&#xa;, s.expected_date&#xd;&#xa;, s.submit_date&#xd;&#xa;, s.reviewed_date&#xd;&#xa;, s.additional_title&#xd;&#xa;, s.score&#xd;&#xa;, s.in_spec&#xd;&#xa;, s.in_alert&#xd;&#xa;, s.person_met&#xd;&#xa;, s.audit_comment&#xd;&#xa;, s.is_agreement_sent&#xd;&#xa;, s.is_agreement_signed&#xd;&#xa;, s.auditor_code&#xd;&#xa;, s.auditor_full_name&#xd;&#xa;, s.source_instance&#xd;&#xa;, s.mxns_entity_id&#xd;&#xa;, s.source_order_id&#xd;&#xa;, s.service_id&#xd;&#xa;, s.updated_on&#xd;&#xa;, s.gdw_updated_on&#xd;&#xa;, s.gdw_delete_flg&#xd;&#xa;&#x29;&#x3b;&#xd;&#xa;</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>384</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+
+</transformation>

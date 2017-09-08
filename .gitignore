@@ -1,0 +1,8 @@
+#Ignore everything under .kettle
+.kettle/*
+
+#Except don't ignore these specific files
+!.kettle/kettle.properties
+!.kettle/shared.xml
+
+logs/*
