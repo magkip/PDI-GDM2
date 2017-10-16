@@ -1,6 +1,6 @@
 <transformation>
   <info>
-    <name>t_initial_load_audit_category</name>
+    <name>t_initial_load_customer_hierarchy_trans</name>
     <description/>
     <extended_description/>
     <trans_version/>
@@ -68,7 +68,7 @@
   <created_user>-</created_user>
   <created_date>2017&#x2f;08&#x2f;01 09&#x3a;12&#x3a;29.475</created_date>
   <modified_user>-</modified_user>
-  <modified_date>2017&#x2f;10&#x2f;04 08&#x3a;12&#x3a;59.752</modified_date>
+  <modified_date>2017&#x2f;10&#x2f;11 16&#x3a;12&#x3a;51.876</modified_date>
     <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA&#x3d;</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
@@ -125,10 +125,10 @@
     </attributes>
   </connection>
   <order>
-  <hop> <from>ti&#x3a; DIM_AUDIT_CATEGORIES</from><to>to&#x3a; AUDIT_CATEGORY</to><enabled>Y</enabled> </hop>
+  <hop> <from>ti&#x3a; DIM_CUSTOMER_HIERARCHIES</from><to>to&#x3a; CUSTOMER_HIERARCHY</to><enabled>Y</enabled> </hop>
   </order>
   <step>
-    <name>ti&#x3a; DIM_AUDIT_CATEGORIES</name>
+    <name>ti&#x3a; DIM_CUSTOMER_HIERARCHIES</name>
     <type>TableInput</type>
     <description/>
     <distribute>Y</distribute>
@@ -139,7 +139,7 @@
            <schema_name/>
            </partitioning>
     <connection>GDW - Source</connection>
-    <sql>SELECT 	AUDIT_ID&#xd;&#xa;		, CATEGORY_ID&#xd;&#xa;		, UPDATED_ON&#xd;&#xa;FROM 	&#x24;&#x7b;mxns.gdm.db.gdw&#x7d;.&#x24;&#x7b;mxns.gdm.schema.gdw&#x7d;.DIM_AUDIT_CATEGORIES&#xd;&#xa;</sql>
+    <sql>SELECT 	CUSTOMER_ID&#xd;&#xa;		, HIERARCHY_ID&#xd;&#xa;		, PARENT_HIERARCHY_ID&#xd;&#xa;		, IS_ACTIVE&#xd;&#xa;		, LIMS_HIERARCHY_CODE&#xd;&#xa;		, MARKET_GLOBAL_INDUSTRY_ID&#xd;&#xa;		, MARKET_GENARAL_INDUSTRY_ID&#xd;&#xa;		, MARKET_INDUSTRY_SEGMENT_ID&#xd;&#xa;		, CLIENT_MARKET_ID &#xd;&#xa;		, TEMPLATE_ID&#xd;&#xa;		, MXNS_ENTITY_ID&#xd;&#xa;		, SOURCE_INSTANCE&#xd;&#xa;		, UPDATED_ON&#xd;&#xa;		, UPDATED_BY &#xd;&#xa;FROM 	&#x24;&#x7b;mxns.gdm.db.gdw&#x7d;.&#x24;&#x7b;mxns.gdm.schema.gdw&#x7d;.DIM_CUSTOMER_HIERARCHIES&#xd;&#xa;</sql>
     <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
@@ -154,7 +154,7 @@
     </step>
 
   <step>
-    <name>to&#x3a; AUDIT_CATEGORY</name>
+    <name>to&#x3a; CUSTOMER_HIERARCHY</name>
     <type>TableOutput</type>
     <description/>
     <distribute>Y</distribute>
@@ -166,7 +166,7 @@
            </partitioning>
     <connection>GDM - Destination</connection>
     <schema>&#x24;&#x7b;mxns.gdm.schema.gdm&#x7d;</schema>
-    <table>AUDIT_CATEGORY</table>
+    <table>CUSTOMER_HIERARCHY</table>
     <commit>1000</commit>
     <truncate>N</truncate>
     <ignore_errors>N</ignore_errors>
@@ -183,16 +183,60 @@
     <return_field/>
     <fields>
         <field>
-          <column_name>AUDIT_ID</column_name>
-          <stream_name>AUDIT_ID</stream_name>
+          <column_name>CUSTOMER_ID</column_name>
+          <stream_name>CUSTOMER_ID</stream_name>
         </field>
         <field>
-          <column_name>CATEGORY_ID</column_name>
-          <stream_name>CATEGORY_ID</stream_name>
+          <column_name>HIERARCHY_ID</column_name>
+          <stream_name>HIERARCHY_ID</stream_name>
+        </field>
+        <field>
+          <column_name>PARENT_HIERARCHY_ID</column_name>
+          <stream_name>PARENT_HIERARCHY_ID</stream_name>
+        </field>
+        <field>
+          <column_name>IS_ACTIVE</column_name>
+          <stream_name>IS_ACTIVE</stream_name>
+        </field>
+        <field>
+          <column_name>LIMS_HIERARCHY_CODE</column_name>
+          <stream_name>LIMS_HIERARCHY_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>MARKET_GLOBAL_INDUSTRY_ID</column_name>
+          <stream_name>MARKET_GLOBAL_INDUSTRY_ID</stream_name>
+        </field>
+        <field>
+          <column_name>MARKET_GENARAL_INDUSTRY_ID</column_name>
+          <stream_name>MARKET_GENARAL_INDUSTRY_ID</stream_name>
+        </field>
+        <field>
+          <column_name>MARKET_INDUSTRY_SEGMENT_ID</column_name>
+          <stream_name>MARKET_INDUSTRY_SEGMENT_ID</stream_name>
+        </field>
+        <field>
+          <column_name>CLIENT_MARKET_ID</column_name>
+          <stream_name>CLIENT_MARKET_ID</stream_name>
+        </field>
+        <field>
+          <column_name>TEMPLATE_ID</column_name>
+          <stream_name>TEMPLATE_ID</stream_name>
+        </field>
+        <field>
+          <column_name>MXNS_ENTITY_ID</column_name>
+          <stream_name>MXNS_ENTITY_ID</stream_name>
+        </field>
+        <field>
+          <column_name>SOURCE_INSTANCE</column_name>
+          <stream_name>SOURCE_INSTANCE</stream_name>
         </field>
         <field>
           <column_name>UPDATED_ON</column_name>
           <stream_name>UPDATED_ON</stream_name>
+        </field>
+        <field>
+          <column_name>UPDATED_BY</column_name>
+          <stream_name>UPDATED_BY</stream_name>
         </field>
     </fields>
      <cluster_schema/>

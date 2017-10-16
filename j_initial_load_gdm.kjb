@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <job>
-  <name>j_initial_load_gdw</name>
+  <name>j_initial_load_gdm</name>
     <description/>
     <extended_description/>
     <job_version/>
@@ -9,7 +8,7 @@
   <created_user>-</created_user>
   <created_date>2017&#x2f;06&#x2f;08 15&#x3a;05&#x3a;57.048</created_date>
   <modified_user>-</modified_user>
-  <modified_date>2017&#x2f;06&#x2f;08 15&#x3a;05&#x3a;57.048</modified_date>
+  <modified_date>2017&#x2f;10&#x2f;11 13&#x3a;11&#x3a;54.799</modified_date>
     <parameters>
         <parameter>
             <name>PROCESS_NAME</name>
@@ -112,38 +111,7 @@
       <draw>Y</draw>
       <nr>0</nr>
       <xloc>160</xloc>
-      <yloc>416</yloc>
-      </entry>
-    <entry>
-      <name>j_initial_load_au</name>
-      <description/>
-      <type>JOB</type>
-      <specification_method>filename</specification_method>
-      <job_object_id/>
-      <filename>&#x24;&#x7b;mxns.gdw.dir.etlroot&#x7d;&#x2f;initial&#x2f;au&#x2f;j_initial_load_au.kjb</filename>
-      <jobname/>
-      <arg_from_previous>N</arg_from_previous>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <loglevel>Nothing</loglevel>
-      <slave_server_name/>
-      <wait_until_finished>Y</wait_until_finished>
-      <follow_abort_remote>N</follow_abort_remote>
-      <expand_remote_job>N</expand_remote_job>
-      <create_parent_folder>N</create_parent_folder>
-      <pass_export>N</pass_export>
-      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
-      </parameters>      <set_append_logfile>N</set_append_logfile>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>160</xloc>
-      <yloc>496</yloc>
+      <yloc>448</yloc>
       </entry>
     <entry>
       <name>j_initialize_gdw_db</name>
@@ -634,15 +602,6 @@
   </entries>
   <hops>
     <hop>
-      <from>j_load_manual_data</from>
-      <to>j_initial_load_au</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
       <from>j_initialize_gdw_db</from>
       <to>j_load_manual_data</to>
       <from_nr>0</from_nr>
@@ -690,15 +649,6 @@
     <hop>
       <from>eval&#x3a; process already running&#x3f;</from>
       <to>t_set_run_control</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>j_initial_load_au</from>
-      <to>t_update_run_control_success</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -776,15 +726,6 @@
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>Y</unconditional>
-    </hop>
-    <hop>
-      <from>j_initial_load_au</from>
-      <to>alert&#x3a; failed to load AU data</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>N</evaluation>
-      <unconditional>N</unconditional>
     </hop>
     <hop>
       <from>alert&#x3a; failed to load AU data</from>

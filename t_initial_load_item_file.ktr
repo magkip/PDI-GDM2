@@ -1,12 +1,12 @@
 <transformation>
   <info>
-    <name>t_initial_load_audit_category</name>
+    <name>t_initial_load_item_file</name>
     <description/>
     <extended_description/>
     <trans_version/>
     <trans_type>Normal</trans_type>
     <trans_status>0</trans_status>
-    <directory>&#x2f;etl&#x2f;initial</directory>
+    <directory>&#x2f;</directory>
     <parameters>
     </parameters>
     <log>
@@ -68,7 +68,7 @@
   <created_user>-</created_user>
   <created_date>2017&#x2f;08&#x2f;01 09&#x3a;12&#x3a;29.475</created_date>
   <modified_user>-</modified_user>
-  <modified_date>2017&#x2f;10&#x2f;04 08&#x3a;12&#x3a;59.752</modified_date>
+  <modified_date>2017&#x2f;10&#x2f;12 12&#x3a;50&#x3a;48.421</modified_date>
     <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA&#x3d;</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
@@ -125,10 +125,10 @@
     </attributes>
   </connection>
   <order>
-  <hop> <from>ti&#x3a; DIM_AUDIT_CATEGORIES</from><to>to&#x3a; AUDIT_CATEGORY</to><enabled>Y</enabled> </hop>
+  <hop> <from>ti&#x3a; DIM_ITEM_FILES</from><to>to&#x3a; ITEM_FILE</to><enabled>Y</enabled> </hop>
   </order>
   <step>
-    <name>ti&#x3a; DIM_AUDIT_CATEGORIES</name>
+    <name>ti&#x3a; DIM_ITEM_FILES</name>
     <type>TableInput</type>
     <description/>
     <distribute>Y</distribute>
@@ -139,7 +139,7 @@
            <schema_name/>
            </partitioning>
     <connection>GDW - Source</connection>
-    <sql>SELECT 	AUDIT_ID&#xd;&#xa;		, CATEGORY_ID&#xd;&#xa;		, UPDATED_ON&#xd;&#xa;FROM 	&#x24;&#x7b;mxns.gdm.db.gdw&#x7d;.&#x24;&#x7b;mxns.gdm.schema.gdw&#x7d;.DIM_AUDIT_CATEGORIES&#xd;&#xa;</sql>
+    <sql>SELECT AUDIT_ITEM_ID&#xd;&#xa;		, ORDER_NUMBER&#xd;&#xa;		, FILE_TYPE_ID&#xd;&#xa;		, FILE_NAME&#xd;&#xa;		, UPDATED_ON&#xd;&#xa;FROM 	&#x24;&#x7b;mxns.gdm.db.gdw&#x7d;.&#x24;&#x7b;mxns.gdm.schema.gdw&#x7d;.DIM_ITEM_FILES&#x3b;&#xd;&#xa;</sql>
     <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
@@ -154,7 +154,7 @@
     </step>
 
   <step>
-    <name>to&#x3a; AUDIT_CATEGORY</name>
+    <name>to&#x3a; ITEM_FILE</name>
     <type>TableOutput</type>
     <description/>
     <distribute>Y</distribute>
@@ -166,7 +166,7 @@
            </partitioning>
     <connection>GDM - Destination</connection>
     <schema>&#x24;&#x7b;mxns.gdm.schema.gdm&#x7d;</schema>
-    <table>AUDIT_CATEGORY</table>
+    <table>ITEM_FILE</table>
     <commit>1000</commit>
     <truncate>N</truncate>
     <ignore_errors>N</ignore_errors>
@@ -183,12 +183,20 @@
     <return_field/>
     <fields>
         <field>
-          <column_name>AUDIT_ID</column_name>
-          <stream_name>AUDIT_ID</stream_name>
+          <column_name>AUDIT_ITEM_ID</column_name>
+          <stream_name>AUDIT_ITEM_ID</stream_name>
         </field>
         <field>
-          <column_name>CATEGORY_ID</column_name>
-          <stream_name>CATEGORY_ID</stream_name>
+          <column_name>ORDER_NUMBER</column_name>
+          <stream_name>ORDER_NUMBER</stream_name>
+        </field>
+        <field>
+          <column_name>FILE_TYPE_ID</column_name>
+          <stream_name>FILE_TYPE_ID</stream_name>
+        </field>
+        <field>
+          <column_name>FILE_NAME</column_name>
+          <stream_name>FILE_NAME</stream_name>
         </field>
         <field>
           <column_name>UPDATED_ON</column_name>
